@@ -5,19 +5,14 @@ import { useForm } from "react-hook-form";
 
 export default function Login() {
   const route = useRouter();
-  
-
-
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-
   function sign_in(data) {
-   
     route.push("/dashboard");
-  }
+  } ;
 
   return (
     <div className="flex items-center justify-center w-screen h-screen">
